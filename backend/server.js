@@ -9,7 +9,7 @@ const { v4: uuidv4 } = require("uuid");
 
 const app = express();
 
-connectDB("mongodb://127.0.0.1:27017/TicTacToe");
+connectDB(process.env.MONGOURL);
 
 const options = {
   origin: "http://localhost:5173",
