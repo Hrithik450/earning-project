@@ -12,7 +12,7 @@ const app = express();
 connectDB(process.env.MONGOURL);
 
 const options = {
-  origin: "http://localhost:5173",
+  origin: "https://earning-project-backend.onrender.com",
   credentials: true,
 };
 
