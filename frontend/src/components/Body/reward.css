@@ -1,0 +1,67 @@
+.reward-container {
+  margin-block: 5rem;
+  display: flex;
+  row-gap: 1rem;
+  max-width: 80rem;
+  margin-inline: auto;
+  height: 25vh;
+}
+
+.reward-container > * {
+  justify-content: space-around;
+  flex-basis: 100%;
+  display: flex;
+}
+
+.reward-button {
+  background-color: orange;
+}
+
+.reward-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  border: 1px solid white;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.reward-label {
+  display: flex;
+  column-gap: 0.5rem;
+  margin-block: 0.8rem;
+}
+
+.reward-button {
+  width: 80%;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.reward-button {
+  &:hover,
+  &:active {
+    box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+    transform: scale(0.9);
+  }
+}
+
+.reward-heading {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 450px) {
+  .reward-container {
+    flex-direction: column;
+  }
+  .reward-heading {
+    font-size: 1.6rem;
+  }
+  .reward-card-container {
+    padding: 0.4rem;
+  }
+}

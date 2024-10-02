@@ -1,0 +1,99 @@
+.Navbar-container {
+  position: relative;
+}
+
+.navbar-container {
+  padding-inline: 2rem;
+  height: 2.5rem;
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.5);
+  border-radius: 0.1rem;
+}
+
+.navbar-container .menu {
+  display: flex;
+  margin-left: auto;
+  column-gap: 3.2rem;
+}
+
+.navbar-container .menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-container .menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar-lists {
+  height: auto;
+  width: 50vw;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateY(15%);
+  z-index: 100;
+  border-radius: 1rem;
+  background-color: #3a3a3a;
+  box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.nav-icons {
+  margin-inline: 0.4rem;
+}
+
+.mobile-nav-btn {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  transform: translateY(50%);
+  font-size: 1.1rem;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.list-items {
+  padding: 1rem;
+}
+
+.list-items ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border: none;
+}
+
+.list-items ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.list-items ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .navbar-container .menu {
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-container {
+    max-width: 140rem;
+  }
+  .navbar-container .menu {
+    display: none;
+  }
+  .mobile-nav-btn {
+    z-index: 10;
+    display: inline-block;
+  }
+}

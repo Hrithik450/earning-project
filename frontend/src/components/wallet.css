@@ -1,0 +1,53 @@
+.wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.wallet .points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallet .points label {
+  font-weight: 700;
+}
+
+.wallet .points p {
+  display: flex;
+  column-gap: 1rem;
+  margin: 0px;
+  font-size: 4rem;
+}
+
+.wallet-navigations {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.wallet-navigations div {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 3rem;
+  width: 12rem;
+}
+
+.wallet-navigations div > * {
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+@media (max-width: 450px) {
+  .wallet-navigations div {
+    width: 10rem;
+  }
+}

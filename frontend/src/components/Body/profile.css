@@ -1,0 +1,113 @@
+.profile-container {
+  max-width: 100rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-container > * {
+  flex-basis: 100%;
+}
+
+header .heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 45%;
+}
+
+.profile-icon {
+  margin-inline: auto;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+/* 
+.section-2 {
+  display: flex;
+} */
+
+.section-2 > * {
+  margin-block: 25px;
+}
+
+.section-2 div h3 {
+  font-weight: 700;
+}
+
+.section-1 button,
+.section-2 button {
+  width: 50%;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 60px;
+  background-color: rgb(98 84 243);
+  font-weight: 600;
+}
+
+.section-1 button,
+.section-2 button {
+  &:hover,
+  &:active {
+    box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+    transform: scale(0.9);
+  }
+}
+
+.section-2 .bottom-btn {
+  margin-left: 10%;
+  color: white;
+}
+
+.section-1 button:hover,
+.section-2 .bottom-btn:hover {
+  opacity: 0.7;
+}
+
+.section-2 .item {
+  padding-left: 15%;
+  position: relative;
+}
+
+.section-2 .item-icon {
+  position: absolute;
+  top: 13%;
+  transform: translateX(-200%);
+}
+
+.profile-icon {
+  font-size: 140px;
+}
+
+@media (max-width: 450px) {
+  .profile-container {
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .Main > * {
+    flex-basis: 100%;
+  }
+  .section-1 {
+    margin-bottom: auto;
+  }
+  .profile-icon {
+    margin-inline: auto;
+    font-size: 200px;
+  }
+  .section-1 button,
+  .section-2 div button {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-icon {
+    font-size: 200px;
+  }
+}

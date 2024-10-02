@@ -1,0 +1,54 @@
+.hero-contain {
+  margin-top: 12rem;
+}
+
+.img-style {
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.7);
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.Hero-container {
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.gridbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 3rem;
+  padding-block: 6rem;
+  max-width: 100rem;
+  margin-inline: 1rem;
+  color: white;
+}
+
+.hero-data .intro {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.company-name {
+  margin-block: 0.5rem;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+@media (max-width: 450px) {
+  .gridbox {
+    grid-template-columns: none;
+  }
+  .company-name {
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+  .wrapper {
+    padding-block: 3rem;
+    margin-top: 5rem;
+  }
+}
