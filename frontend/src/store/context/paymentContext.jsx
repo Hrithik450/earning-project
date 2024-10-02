@@ -38,7 +38,7 @@ function PaymentProvider({ children }) {
   const LoadPaymentDetails = async (paymentid, email, plan) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/payment/${paymentid}`,
+        `https://earning-project.onrender.com/payment/${paymentid}`,
         { email, plan },
         {
           withCredentials: true,
