@@ -42,7 +42,7 @@ function GamaDataProvider({ children }) {
     });
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/Updatecoin",
+        "https://earning-project.onrender.com/api/user/Updatecoin",
         { coin },
         {
           withCredentials: true,
